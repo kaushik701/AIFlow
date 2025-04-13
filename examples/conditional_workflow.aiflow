@@ -1,0 +1,25 @@
+workflow SentimentAnalyzer {
+  input: text;
+  
+  step AnalyzeSentiment {
+    model: "gpt-3.5-turbo";
+    prompt: "Analyze the sentiment of the following text and respond with only 'positive', 'negative', or 'neutral': {{text}}";
+    output: sentiment;
+  }
+  
+  if (exists:sentiment) {
+    step PositiveResponse {
+      model: "gpt-3.5-turbo";
+      prompt: "The sentiment is {{sentiment}}. Generate a supportive response to this positive feedback: {{text}}";
+      output: response;
+    }
+  } else {
+    step NegativeResponse {
+      model: "gpt-3.5-turbo";
+      prompt: "The sentiment is {{sentiment}}. Generate a helpful response to address this concern: {{text}}";
+      output: response;
+    }
+  }
+  
+  return: response;
+}

@@ -1,0 +1,13 @@
+step Summarize {
+    model: "gpt-4";
+    prompt: "Summarize the following text: {{text}}";
+    output: summary;
+}
+
+step Enhance {
+    model: "gpt-4";
+    prompt: "Enhance this summary with more details: {{summary}}";
+    output: response;
+}
+
+return: response;

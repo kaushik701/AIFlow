@@ -1,0 +1,7 @@
+step Analyze {
+    model: "gpt-4";
+    prompt: "Analyze the sentiment of the following text. Return POSITIVE, NEGATIVE, or NEUTRAL, followed by a brief explanation: {{text}}";
+    output: analysis;
+}
+
+return: analysis;
