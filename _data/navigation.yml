@@ -1,0 +1,53 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "Getting Started"
+    children:
+      - title: "Installation"
+        url: /getting-started/installation
+      - title: "Quick Start"
+        url: /getting-started/quick-start
+      - title: "First Workflow"
+        url: /getting-started/first-workflow
+  - title: "Language Reference"
+    children:
+      - title: "Syntax"
+        url: /language-reference/syntax
+      - title: "Workflows"
+        url: /language-reference/workflows
+      - title: "Steps"
+        url: /language-reference/steps
+      - title: "Variables"
+        url: /language-reference/variables
+      - title: "Templates"
+        url: /language-reference/templates
+  - title: "OpenAI Integration"
+    children:
+      - title: "Models"
+        url: /openai-integration/models
+      - title: "Parameters"
+        url: /openai-integration/parameters
+      - title: "Error Handling"
+        url: /openai-integration/error-handling
+  - title: "Examples"
+    children:
+      - title: "Text Processing"
+        url: /examples/text-processing
+      - title: "Sentiment Analysis"
+        url: /examples/sentiment-analysis
+      - title: "Translation"
+        url: /examples/translation
+  - title: "Advanced"
+    children:
+      - title: "Security"
+        url: /advanced/security
+      - title: "Performance"
+        url: /advanced/performance
+      - title: "Extending AIFlow"
+        url: /advanced/extending
+  - title: "Contributing"
+    children:
+      - title: "Contributing Guide"
+        url: /contributing/contributing
+      - title: "Code of Conduct"
+        url: /contributing/code-of-conduct

@@ -1,0 +1,7 @@
+theme: jekyll-theme-cayman
+title: AIFlow Documentation
+description: Documentation for AIFlow - A Language for AI Workflows
+baseurl: "/AIFlow"
+url: "https://kaushik701.github.io"
+github:
+  repository_url: https://github.com/kaushik701/AIFlow
