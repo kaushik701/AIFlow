@@ -11,7 +11,7 @@ AIFlow is a domain-specific language designed to create, manage, and execute AI 
 - Template system for dynamic data insertion
 - Conditional logic for branching workflows
 
-For more details, read the documentation at 
+For more details, read the documentation 
 
 ## Installation
 
