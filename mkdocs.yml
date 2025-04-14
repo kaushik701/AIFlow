@@ -1,0 +1,62 @@
+site_name: AIFlow Documentation
+site_description: Documentation for AIFlow, a domain-specific language for AI workflows
+site_author: Kaushik Iyer
+repo_url: https://github.com/kaushik701/AIFlow
+repo_name: kaushik701/AIFlow
+
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: amber
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - Quick Start: getting-started/quick-start.md
+    - First Workflow: getting-started/first-workflow.md
+  - Language Reference:
+    - Syntax: language-reference/syntax.md
+    - Workflows: language-reference/workflows.md
+    - Steps: language-reference/steps.md
+    - Variables: language-reference/variables.md
+    - Templates: language-reference/templates.md
+  - OpenAI Integration:
+    - Models: openai-integration/models.md
+    - Parameters: openai-integration/parameters.md
+    - Error Handling: openai-integration/error-handling.md
+  - Examples:
+    - Text Processing: examples/text-processing.md
+    - Sentiment Analysis: examples/sentiment-analysis.md
+    - Translation: examples/translation.md
+  - Advanced:
+    - Security: advanced/security.md
+    - Performance: advanced/performance.md
+    - Extending AIFlow: advanced/extending.md
+  - API Reference:
+    - Lexer: api-reference/lexer.md
+    - Parser: api-reference/parser.md
+    - Interpreter: api-reference/interpreter.md
+  - Contributing: contributing.md
